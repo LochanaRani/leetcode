@@ -11,9 +11,7 @@ class Solution {
             for(int j=0;j<n;j++){
               sum+=accounts[i][j];
             }
-            if(sum>max){
-                max=sum;
-              }
+            max=Math.max(max,sum);
         }
         return max;
     }
